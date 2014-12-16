@@ -229,7 +229,7 @@ nav .nav-content {
 }
 @media (max-width: 580px) {
 }
-@media (max-width: 580px) {
+@media (min-width: 581px) and (max-width: 880px) {
   .card {
     display: inline;
     float: left;
@@ -239,6 +239,19 @@ nav .nav-content {
     margin: 0 0.9615384615385%;
     margin-bottom: 0.3em;
     *width: 59.563301282051306%;
+    *margin: 0 0.9094551282052%;
+  }
+}
+@media (max-width: 580px) {
+  .card {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding: 0 0;
+    width: 98.0769230769231%;
+    margin: 0 0.9615384615385%;
+    margin-bottom: 0.3em;
+    *width: 121.1017628205128%;
     *margin: 0 0.9094551282052%;
   }
 }
@@ -277,16 +290,6 @@ nav .nav-content {
 }
 .card:hover .title {
   color: #fff;
-}
-@media (max-width: 790px) {
-  .card .title {
-    font-size: 15px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .card .cover {
-    height: 140px;
-  }
 }
 .cardList {
   overflow: auto;
