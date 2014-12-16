@@ -1,0 +1,74 @@
+/*
+	Desktop Nav
+*/
+nav
+	height 50px
+	background #2b5c7c
+	
+	.nav-content
+		@extends $container
+		
+	.nav-brand
+		float left
+		color #ffffff
+		font-size 19px
+		line-height 47px
+		margin-left 8px
+
+	ul
+		float right
+		margin 0
+		padding 0
+		list-style-type none
+
+		li
+			display inline
+			
+			a
+				color #ffffff
+				text-decoration none
+				display inline-block
+				margin-bottom 1px
+				padding 17px;
+				transition 0.2s
+
+		li:hover a
+			background #ffffff
+			color #2b5c7c
+			
+	ul.nav-mobile-bt
+		display none
+		
+/*
+	Mobile Nav
+*/
+@media (max-width: 600px)
+	nav	
+		.nav-mobile-bg
+			display none
+			z-index 1000
+			position fixed
+			background rgba(79, 79, 79, 0.59);
+			width 100%
+			height 100%
+			top 0
+			left 0
+		ul.nav-items
+			z-index 10000
+			position fixed
+			right -220px
+			width 200px
+			height 100%
+			background #2b5c7c
+			padding-top 15px
+			transition all 0.2s ease 0s
+			box-shadow -5px 0px 20px #474747
+			
+		ul.nav-mobile-bt, ul li, ul li a
+			display block
+
+	nav.nav-mobile-open
+		ul.nav-items
+			right 0px
+		.nav-mobile-bg
+			display block

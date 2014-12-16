@@ -147,6 +147,7 @@ input,
 select {
   vertical-align: middle;
 }
+@import url("http://fonts.googleapis.com/css?family=Roboto");
 *,
 *:before,
 *:after {
@@ -165,7 +166,8 @@ body *zoom:1:after {
 body *zoom:1:after {
   clear: both;
 }
-.cardList {
+.cardList,
+nav .nav-content {
   display: table;
   max-width: 1040px;
   width: 100%;
@@ -289,9 +291,86 @@ body *zoom:1:after {
 .cardList {
   overflow: auto;
   margin: 0 auto;
+  padding-top: 30px;
+}
+nav {
+  height: 50px;
+  background: #2b5c7c;
+}
+nav .nav-brand {
+  float: left;
+  color: #fff;
+  font-size: 19px;
+  line-height: 47px;
+  margin-left: 8px;
+}
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1px;
+  padding: 17px;
+  webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+nav ul li:hover a {
+  background: #fff;
+  color: #2b5c7c;
+}
+nav ul.nav-mobile-bt {
+  display: none;
+}
+@media (max-width: 600px) {
+  nav .nav-mobile-bg {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    background: rgba(79,79,79,0.59);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  nav ul.nav-items {
+    z-index: 10000;
+    position: fixed;
+    right: -220px;
+    width: 200px;
+    height: 100%;
+    background: #2b5c7c;
+    padding-top: 15px;
+    webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    -webkit-box-shadow: -5px 0px 20px #474747;
+    -moz-box-shadow: -5px 0px 20px #474747;
+    box-shadow: -5px 0px 20px #474747;
+  }
+  nav ul.nav-mobile-bt,
+  nav ul li,
+  nav ul li a {
+    display: block;
+  }
+  nav.nav-mobile-open ul.nav-items {
+    right: 0px;
+  }
+  nav.nav-mobile-open .nav-mobile-bg {
+    display: block;
+  }
 }
 body {
-  margin-top: 50px;
   background: #f7f7f7;
   font-family: 'Roboto', sans-serif;
 }

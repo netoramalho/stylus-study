@@ -1,49 +1,72 @@
 <html>
 <head>
-	<title>Stylus Study</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/main.css">
+    <title>Stylus Study</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-	<div class="cardList">
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-		<div class="card">
-			<div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
-			<div class="title">Study</div>
-		</div>
-	</div>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-brand">Brand</div>
+            <ul class="nav-items">
+                <li><a href="" title="">Study 1</a></li>
+                <li><a href="" title="">Study 2</a></li>
+                <li><a href="" title="">Study 3</a></li>
+            </ul>
+            <ul class="nav-mobile-bt">
+                <li><a href="javascript:toogleMobileMenu()" title="">Menu</a></li>
+            </ul>
+        </div>
+        <div class="nav-mobile-bg" onClick="toogleMobileMenu()"></div>
+    </nav>
 
+    <div class="cardList">
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+        <div class="card">
+            <div class="cover" style="background-image: url('http://i.istockimg.com/file_thumbview_approve/10429015/2/stock-photo-10429015-young-adult-study.jpg')"></div>
+            <div class="title">Study</div>
+        </div>
+    </div>
+
+
+<script>
+    var activeMobileMenu = false;
+    function toogleMobileMenu(){
+        var nav = document.querySelector('nav');
+        (!activeMobileMenu) ? nav.classList.add('nav-mobile-open') : nav.classList.remove('nav-mobile-open');
+        activeMobileMenu = !activeMobileMenu;
+    }
+</script>
 </body>
 </html>
