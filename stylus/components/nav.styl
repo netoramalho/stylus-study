@@ -16,7 +16,7 @@ nav
 		float left
 		color #ffffff
 		font-size 19px
-		line-height 47px
+		line-height 50px
 		margin-left 8px
 
 	ul
@@ -40,7 +40,7 @@ nav
 			background #ffffff
 			color #2b5c7c
 			
-	ul.nav-mobile-bt
+	.nav-mobile-bt
 		display none
 		
 /*
@@ -60,7 +60,7 @@ nav
 		ul.nav-items
 			z-index 10000
 			position fixed
-			right -220px
+			left -220px
 			width 200px
 			height 100%
 			background #2b5c7c
@@ -68,11 +68,32 @@ nav
 			transition all 0.2s ease 0s
 			box-shadow -5px 0px 20px #474747
 			
-		ul.nav-mobile-bt, ul li, ul li a
+		ul li, ul li a
 			display block
+			
+		.nav-mobile-bt
+			position absolute
+			z-index 10000
+			cursor pointer
+			display block
+			float left
+			color #ffffff
+			line-height 50px
+			font-size 24px
+			margin-left 6px
+		
+		.nav-brand
+			display block
+			z-index 1000
+			margin-left 0
+			text-align center
+			width 100%
+			position absolute
+			left 0
+			top 0
 
 	nav.nav-mobile-open
 		ul.nav-items
-			right 0px
+			left 0px
 		.nav-mobile-bg
 			display block
